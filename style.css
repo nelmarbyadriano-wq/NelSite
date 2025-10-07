@@ -15,6 +15,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-y: auto;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
     padding: 0;
     background: var(--color-background);
     color: var(--color-text);
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.6;
 }
 
@@ -34,8 +35,8 @@ h2, h3, .logo {
 }
 
 h2.section-title {
-    font-size: 44px;
-    margin-bottom: 50px;
+    font-size: 48px;
+    margin-bottom: 55px;
     color: var(--color-secondary);
     position: relative;
     display: inline-block;
@@ -55,11 +56,11 @@ h2.section-title::after {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .page {
-    padding: 100px 8%; 
+    padding: 200px 5%; 
     text-align: center;
 }
 
@@ -98,10 +99,10 @@ header nav a:hover {
 
 
 .btn {
-    padding: 12px 25px;
+    padding: 14px 28px;
     border: none;
     border-radius: 30px; 
-    font-size: 16px;
+    font-size: 17px; 
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -179,7 +180,7 @@ header nav a:hover {
 }
 
 .stat-item h3 {
-    font-size: 42px;
+    font-size: 44px;
     color: var(--color-primary);
     transition: transform 0.3s ease;
 }
@@ -189,7 +190,7 @@ header nav a:hover {
 }
 
 .stat-item p {
-    font-size: 16px;
+    font-size: 17px;
     margin: 0;
 }
 
@@ -295,7 +296,7 @@ header nav a:hover {
 
 .testimonial-card .quote {
     font-style: italic;
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 15px;
     color: #555;
 }
@@ -318,26 +319,26 @@ header nav a:hover {
 }
 
 .skill-item p {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 5px;
 }
 
 .skill-item strong {
-    font-size: 18px;
+    font-size: 19px;
     color: var(--color-secondary);
 }
 
 .bar {
     background: #ddd;
-    height: 10px;
-    border-radius: 5px;
+    height: 12px;
+    border-radius: 6px;
     margin-top: 5px;
 }
 
 .bar div {
-    height: 10px;
+    height: 12px;
     background: var(--color-accent);
-    border-radius: 5px;
+    border-radius: 6px;
     animation: fillSkill 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; 
 }
 
@@ -357,8 +358,8 @@ header nav a:hover {
 
 form input, 
 form textarea {
-    padding: 15px;
-    font-size: 16px;
+    padding: 16px;
+    font-size: 17px; 
     border-radius: 8px;
     border: 1px solid #ddd;
     transition: border-color 0.3s;
@@ -382,6 +383,6 @@ footer {
     text-align: center;
     padding: 30px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 50px;
 }
