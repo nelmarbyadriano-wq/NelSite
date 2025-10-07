@@ -1,157 +1,168 @@
-@media (max-width: 480px) {
-    body {
-        font-size: 16px;
+@media (max-width: 1200px) {
+    .about-hero {
+        gap: 50px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
-
-    h2.section-title {
-        font-size: 32px;
-        margin-bottom: 30px;
-    }
-
+    
     .page {
-        padding: 100px 3%;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
+}
 
-    header {
+@media (max-width: 1024px) {
+    header nav a {
+        margin: 0 8px;
+    }
+    
+    .about-hero {
         flex-direction: column;
-        padding: 15px 3%;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .about-content {
         text-align: center;
     }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+
+    .stat-item h3 {
+        font-size: 36px;
+    }
+    
+    .page {
+        padding: 100px 5%;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 5%;
+    }
+
     header nav {
         margin-top: 10px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 8px;
     }
+    
     header nav a {
-        font-size: 14px;
-        margin: 0 5px;
-        padding: 5px 0;
-    }
-
-    .about-hero {
-        flex-direction: column;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        gap: 30px;
-    }
-    .profile-img {
-        width: 200px;
-        height: 200px;
-    }
-    .about-content {
-        text-align: center;
-    }
-    .cta-buttons {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-        width: 100%;
-    }
-    .stats-grid {
-        flex-direction: column;
-        gap: 20px;
-        border-top: none;
-        padding-top: 0;
-    }
-    .stat-item h3 {
-        font-size: 36px;
-    }
-
-    .hobby-grid,
-    .image-grid,
-    .testimonial-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    .hobby-item p {
-        padding: 0 10px 20px;
-    }
-
-    .skill-item p {
+        margin: 5px 8px;
         font-size: 15px;
     }
-    .skill-item strong {
-        font-size: 17px;
-    }
     
-    .contact form {
-        padding: 20px;
+    .btn {
+        padding: 10px 20px;
+        font-size: 15px;
     }
-}
 
-@media (min-width: 481px) and (max-width: 768px) {
     h2.section-title {
-        font-size: 38px;
-    }
-    .page {
-        padding: 120px 4%;
+        font-size: 36px;
+        margin-bottom: 40px;
     }
 
-    header {
-        padding: 15px 4%;
+    .page {
+        padding: 80px 5%;
     }
-    header nav a {
-        margin: 0 8px;
-    }
-    
-    .about-hero {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-        padding-top: 80px;
-        padding-bottom: 60px;
-    }
-    .about-content {
-        text-align: center;
-    }
-    .cta-buttons {
-        justify-content: center;
-    }
-    .stats-grid {
-        justify-content: space-around;
-    }
+
     .profile-img {
         width: 250px;
         height: 250px;
     }
     
+    .stats-grid {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+        padding-top: 15px;
+    }
+
     .hobby-grid,
-    .image-grid,
-    .testimonial-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
+    .testimonial-grid,
+    .image-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 25px;
+    }
+
+    .grid-item {
+        height: 350px;
+    }
+    
+    .hobby-item p {
+        padding: 0 10px 10px;
     }
 
     .contact form {
-        max-width: 80%;
+        padding: 30px;
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    header {
-        padding: 15px 3%;
+@media (max-width: 480px) {
+    header nav a:not(.btn) {
+        display: none;
     }
-    header nav a {
-        margin: 0 8px;
+    
+    .logo {
+        font-size: 24px;
+    }
+    
+    header nav {
+        margin-top: 5px;
+    }
+
+    h2.section-title {
+        font-size: 32px;
+        margin-bottom: 25px;
     }
 
     .page {
-        padding: 150px 3%;
+        padding: 60px 4%;
     }
 
-    .about-hero {
-        gap: 60px;
-        max-width: 90%;
-    }
     .profile-img {
-        width: 280px;
-        height: 280px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .stats-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .about-hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .hobby-grid,
+    .testimonial-grid,
     .image-grid {
-        max-width: 95%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .grid-item {
+        height: 250px;
+    }
+    
+    .card-image-wrapper {
+        height: 180px;
     }
 }
